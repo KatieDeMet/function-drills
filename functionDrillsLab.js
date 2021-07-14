@@ -248,12 +248,13 @@ let duck = "cute";
 function bathroom() {
   let rubberDuck = "squeaky";
   bathroomScope.push(rubberDuck);
-  return bathtub();
+  
   function bathtub() {
     let sailorDuck = "nautical";
     bathroomScope.push(sailorDuck);
     bathtubScope.push(sailorDuck);
   }
+  bathtub();
 }
 
 function pond() {
